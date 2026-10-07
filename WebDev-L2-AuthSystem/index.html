@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="form-wrapper" id="login-form-wrapper">
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Please login to your account</p>
+            <div id="login-alert" class="alert hidden"></div>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p class="switch-form">Don't have an account? <span id="show-register">Register</span></p>
+        </div>
+
+        <div class="form-wrapper hidden" id="register-form-wrapper">
+            <h2>Create Account</h2>
+            <p class="subtitle">Register to get started</p>
+            <div id="register-alert" class="alert hidden"></div>
+            <form id="register-form">
+                <div class="input-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Password (Min 8 chars, 1 number)</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-confirm-password">Confirm Password</label>
+                    <input type="password" id="register-confirm-password" required>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+            <p class="switch-form">Already have an account? <span id="show-login">Login</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Web App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Tasks</h1>
+            <div class="input-section">
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                <button id="add-btn"><i class="fas fa-plus"></i> Add</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="task-section">
+                <h2>Pending Tasks (<span id="pending-count">0</span>)</h2>
+                <ul id="pending-list" class="task-list">
+                    <!-- Tasks will be injected here via JS -->
+                </ul>
+                <div id="pending-empty" class="empty-state">No pending tasks! 🎉</div>
+            </section>
+
+            <section class="task-section completed-section">
+                <h2>Completed Tasks (<span id="completed-count">0</span>)</h2>
+                <ul id="completed-list" class="task-list">
+                    <!-- Tasks will be injected here via JS -->
+                </ul>
+                <div id="completed-empty" class="empty-state">No completed tasks yet.</div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

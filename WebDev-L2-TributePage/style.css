@@ -1,0 +1,181 @@
+/* Custom CSS Variables for Theme */
+:root {
+    --primary-bg: #f4f4f9;      /* Background Color 1 (Light) */
+    --secondary-bg: #e2e8f0;    /* Background Color 2 (Slightly Darker) */
+    --text-color: #333333;
+    --heading-color: #1a202c;
+    --accent-color: #2b6cb0;
+    
+    /* Typography: Serif for Headings, Sans-serif for Body */
+    --font-heading: 'Merriweather', serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--primary-bg);
+    line-height: 1.6;
+}
+
+/* Header Section */
+#header {
+    background-color: var(--secondary-bg);
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 2px solid #cbd5e0;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
+}
+
+#title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#header p {
+    font-size: 1.2rem;
+    color: #4a5568;
+}
+
+/* Main Content Wrapper */
+#main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Image Display */
+#img-div {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: var(--secondary-bg);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+#img-caption {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #4a5568;
+}
+
+/* Tribute Information */
+#tribute-info {
+    margin: 0 auto;
+}
+
+#tribute-info h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+#tribute-info p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+#tribute-info ul {
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    padding-left: 2rem;
+}
+
+#tribute-info li {
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+}
+
+/* Quote Block */
+.quote-block {
+    background-color: var(--secondary-bg);
+    border-left: 5px solid var(--accent-color);
+    padding: 1.5rem 2rem;
+    margin: 2rem auto;
+    max-width: 700px;
+    font-family: var(--font-heading);
+    border-radius: 4px;
+}
+
+.quote-block p {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    text-align: left !important;
+}
+
+.quote-block cite {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #cbd5e0;
+    font-size: 1.1rem;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #main {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    #title {
+        font-size: 2rem;
+    }
+    
+    .quote-block {
+        padding: 1rem;
+    }
+    
+    .quote-block p {
+        font-size: 1.1rem;
+    }
+}

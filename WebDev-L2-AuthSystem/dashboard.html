@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Secure Area</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+    <nav class="navbar">
+        <div class="logo">AuthSystem</div>
+        <button id="logout-btn" class="btn-outline">Logout</button>
+    </nav>
+    <main class="dashboard-content">
+        <div class="welcome-card">
+            <h1 id="welcome-message">Loading...</h1>
+            <p>Welcome to your secure dashboard. This page is protected and requires authentication to access.</p>
+            <div class="user-details">
+                <h3>Your Profile Details</h3>
+                <p><strong>Name:</strong> <span id="user-name"></span></p>
+                <p><strong>Email:</strong> <span id="user-email"></span></p>
+                <p><strong>Account created:</strong> <span id="user-date"></span></p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
